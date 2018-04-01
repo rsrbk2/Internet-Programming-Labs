@@ -1,0 +1,39 @@
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Задание 4-3</title>
+    <link href="style.css" rel="stylesheet"/>
+    <script type="text/javascript" src="../../jquery_3.2.1.min.js"></script>
+    <script type="text/javascript" src="lab4-4.js"></script>
+</head>
+<body>
+
+    <div class="dummy">
+        <div id="area" class="wrapper">
+
+            <p id="question"></p>
+
+                <button onclick="check(0)" class="myButton" id="option1"></button>
+
+                <button onclick="check(1)" class="myButton" id="option2"></button>
+
+                <button onclick="check(2)" class="myButton" id="option3"></button>
+
+                <button onclick="check(3)" class="myButton" id="option4"></button>
+
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div id="footer">
+        <button id="start" class="myButton" onclick="check(4)">Приступить к тесту</button>
+        <script type="text/javascript">
+            let current_url = document.URL;
+            document.write("<a id='end' style='display: none;'    href='" + current_url + "'>Начать сначала</a>");
+        </script>
+    </div>
+
+</body>
+</html>
